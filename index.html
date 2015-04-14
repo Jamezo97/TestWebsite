@@ -1,6 +1,23 @@
 <html>
-    <head>
+    <title>A Better Website</title>
+    <body>
+        <center><canvas id="canvasElement" width=500 height=500 style="width: 500px; height: 500px; margin-top: 60px;"></canvas></center>
+    </body>
     
-    </head>
-    <title>A Website</title>
+    <script>
+        var canvasElement = document.getElementById("canvasElement");
+        var ctx = canvasElement.getContext("2d");
+        
+        function resetCanvas(){
+            ctx.strokeStyle = "#ff0000";
+            ctx.rect(0, 0, canvasElement.width, canvasElement.height);
+            ctx.stroke();
+        }
+        resetCanvas();
+        
+        
+        //ctx.stroke();
+        
+        
+    </script>
 </html>
